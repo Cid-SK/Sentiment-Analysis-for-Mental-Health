@@ -16,7 +16,7 @@ This application leverages a sentiment analysis model to categorize mental healt
 To run this application, you need to install the following Python packages. You can install them using pip:
 
 ```bash
-pip install pandas streamlit pickle-mixin nltk scikit-learn wordcloud matplotlib
+pip install pandas streamlit pickle nltk scikit-learn
 ```
 
 ## Installation
