@@ -70,31 +70,27 @@ tab1, tab2 = st.tabs(["***Home***", "***Sentiment Analysis***"])
 
 with tab1:
     st.header("Welcome to the Mental Health Analysis App")
-    
+
     # Introduction
     st.write(
-        "This application leverages a comprehensive dataset of mental health statements to provide insights "
-        "into various mental health statuses. Use this app to explore the data, view visualizations, and "
-        "analyze sentiments."
+        "This application utilizes a sentiment analysis model to provide insights into mental health statuses based on textual input. "
+        "By leveraging a trained model and a comprehensive dataset, this app aims to categorize mental health statements and offer appropriate suggestions."
     )
 
     st.write(
         "### What You Can Do Here:"
-        "\n- **Explore Data:** Get a detailed overview of the dataset."
-        "\n- **View Visualizations:** See interactive charts and graphs of mental health data."
-        "\n- **Sentiment Analysis:** Enter a statement to receive a mental health category and medical suggestion."
+        "\n- **Analyze Statements:** Enter a text statement to receive a predicted mental health category and tailored suggestions."
     )
 
-    # Add interactive content
-    st.subheader("Interactive Features")
+    st.subheader("App Features")
     st.write(
-        "- **Visualize Data:** View the distribution of different mental health statuses and token lengths."
-        "\n- **Analyze Statements:** Enter a text statement to categorize and get personalized suggestions."
+        "- **Sentiment Analysis:** Input a statement to categorize it and receive a personalized suggestion based on the predicted mental health status."
+        "\n- **Further Reading:** Access resources to better understand mental health and the dataset used."
     )
 
     # Add a quick demo section
     st.subheader("Quick Demo")
-    st.write("To see how the sentiment analysis works, try entering a sample statement in the 'Sentiment Analysis' section.")
+    st.write("Try entering a sample statement in the 'Sentiment Analysis' section to see how the model categorizes the input and provides suggestions.")
 
     # Add links to further resources
     st.subheader("Further Reading")
@@ -104,6 +100,7 @@ with tab1:
     st.markdown(
         "[Learn more about mental health](https://www.medicalnewstoday.com/articles/154543#types-of-disorders)"
     )
+
     
 with tab2:
     if 'predict' not in st.session_state:
