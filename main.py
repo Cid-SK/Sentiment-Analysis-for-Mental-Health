@@ -13,7 +13,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 with open('log_reg.pkl', 'rb') as f:
     logreg_model = pickle.load(f)
 
-with open('G:/SK/Ds/nlp_senti/vectorizer.pkl', 'rb') as f:
+with open('vectorizer.pkl', 'rb') as f:
     loaded_vectorizer = pickle.load(f)
 
 # NLTK resources
@@ -49,7 +49,7 @@ def process_text(text):
     tokens = lemmatize_tokens(tokens)
     return ' '.join(tokens)
 
-df = pd.read_csv("G:/SK/Ds/nlp_senti/nlp.csv")
+#df = pd.read_csv("G:/SK/Ds/nlp_senti/nlp.csv")
 
 suggestions = {
     'Normal': 'Keep up with your routine and stay healthy!',
@@ -123,9 +123,6 @@ with tab2:
                 
                 # Predicting the mental health status
                 predictions = logreg_model.predict(vectorized_text)
-                
-                # Print the predictions for debugging
-                #st.write(f"Predictions: {predictions}")
 
                 # Labels
                 labels = ['Normal', 'Depression', 'Suicidal', 'Anxiety', 'Stress', 'Bipolar', 'Personality Disorder']
