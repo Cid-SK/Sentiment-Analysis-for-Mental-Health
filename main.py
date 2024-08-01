@@ -66,7 +66,7 @@ st.set_page_config(page_title="Sentiment Analysis for Mental Health - NLP", layo
 st.title("***:blue[Sentiment Analysis for Mental Health]***")
 st.markdown("<style>div.block-container{padding-top:1rem;}</style>", unsafe_allow_html=True)
 
-tab1, tab2, tab3 = st.tabs(["***Home***", "***Sentiment Analysis***", "***Visualization***"])
+tab1, tab2, tab3 = st.tabs(["***Home***", "***Sentiment Analysis***"])
 
 with tab1:
     st.header("Welcome to the Mental Health Analysis App")
@@ -74,8 +74,7 @@ with tab1:
     # Introduction
     st.write(
         "This application leverages a comprehensive dataset of mental health statements to provide insights "
-        "into various mental health statuses. Use this app to explore the data, view visualizations, and "
-        "analyze sentiments."
+        "into various mental health statuses."
     )
 
     st.write(
