@@ -76,6 +76,6 @@ The application is deployed and accessible via the following link:
 
 ## Contact
 
-For any questions or issues, please open an issue on the GitHub repository or contact [your-email@example.com](mailto:your-email@example.com).
+For any questions or issues, please open an issue on the GitHub repository or contact [your-email@example.com](mailto:your-2310sathishkumarsk@gmail.com).
 
 ---
