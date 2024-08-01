@@ -74,8 +74,4 @@ The application is deployed and accessible via the following link:
 - [Explore the dataset on Kaggle](https://www.kaggle.com/datasets/suchintikasarkar/sentiment-analysis-for-mental-health/data)
 - [Learn more about mental health](https://www.medicalnewstoday.com/articles/154543#types-of-disorders)
 
-## Contact
-
-For any questions or issues, please open an issue on the GitHub repository or contact [your-email@example.com](mailto:your-2310sathishkumarsk@gmail.com).
-
 ---
