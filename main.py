@@ -10,7 +10,7 @@ import string
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Load the model and vectorizer
-with open('G:/SK/Ds/nlp_senti/log_reg.pkl', 'rb') as f:
+with open('log_reg.pkl', 'rb') as f:
     logreg_model = pickle.load(f)
 
 with open('G:/SK/Ds/nlp_senti/vectorizer.pkl', 'rb') as f:
