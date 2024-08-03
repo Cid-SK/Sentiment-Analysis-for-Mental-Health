@@ -138,3 +138,28 @@ with tab2:
                 st.write("Please enter a statement to get a prediction.")
             st.session_state.predict = False
 
+import requests
+import zipfile
+import io
+import pandas as pd
+
+# URL of the zip file in your GitHub repository
+zip_file_url = 'https://github.com/your-username/your-repository-name/raw/main/your-file.zip'
+
+# Download the zip file
+response = requests.get(nlp.zip)
+response.raise_for_status()  # Check if the request was successful
+
+# Extract the zip file contents
+with zipfile.ZipFile(io.BytesIO(response.content)) as z:
+    # List all files in the zip archive
+    print("Files in zip archive:", z.namelist())
+    
+    # Extract all files to a specific directory
+    z.extractall('path/to/extract/directory')
+    
+    # If you want to read a specific file from the zip, you can do so like this:
+    with z.open('your-file.csv') as f:
+        df = pd.read_csv(f)
+        print(df.head())
+
