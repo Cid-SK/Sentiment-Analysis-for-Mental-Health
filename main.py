@@ -141,13 +141,12 @@ with tab2:
 import requests
 import zipfile
 import io
-import pandas as pd
 
 # URL of the zip file in your GitHub repository
-zip_file_url = 'https://github.com/your-username/your-repository-name/raw/main/your-file.zip'
+zip_file_url = 'nlp.zip'
 
 # Download the zip file
-response = requests.get(nlp.zip)
+response = requests.get(zip_file_url)
 response.raise_for_status()  # Check if the request was successful
 
 # Extract the zip file contents
