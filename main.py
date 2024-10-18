@@ -62,7 +62,7 @@ suggestions = {
 }
 
 # Streamlit part
-st.set_page_config(page_title="Sentiment Analysis for Mental Health - NLP", layout="wide")
+st.set_page_config(page_title="Sentiment Prediction for Mental Health - NLP", layout="wide")
 st.title("***:blue[Sentiment Analysis for Mental Health]***")
 st.markdown("<style>div.block-container{padding-top:1rem;}</style>", unsafe_allow_html=True)
 
