@@ -1,6 +1,6 @@
 ---
 
-# Sentiment Analysis for Mental Health - NLP
+# Sentiment Prediction for Mental Health-NLP
 
 ## Overview
 
